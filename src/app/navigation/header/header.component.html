@@ -1,0 +1,20 @@
+<mat-toolbar class="transparent-toolbar">
+  <mat-toolbar-row class="toolbar-default">
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <a [routerLink]="'/home'"><img src="../../assets/logo_abssa.png" alt="Abssa logo" class="logo-abssa"></a>   
+    <span class="fill-remaining-space"></span>
+    <div>
+      	<a mat-button [routerLink]="'/us'">Nosotros</a>
+      	<a mat-button [routerLink]="'/solutions'">Soluciones</a>
+      	<a mat-button [routerLink]="'/services'">Servicios</a>
+      	<a mat-button [routerLink]="'/clients'">Clientes</a>
+      	<a mat-button [routerLink]="'/contact'">Contacto</a>
+      	<a mat-raised-button class="clients-access">
+      		<span class="material-icons">person</span>
+      		ACCESO CLIENTES
+    	</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
