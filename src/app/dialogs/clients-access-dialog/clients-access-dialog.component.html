@@ -1,0 +1,24 @@
+<mat-toolbar class="transparent-toolbar">
+	<div style="display:flex;">
+		<span class="material-icons">group</span>
+		<h4>Acceso Clientes</h4>
+		<button mat-button (click)="onNoClick()" style="margin-left: 85%">
+			<span class="material-icons">close</span>
+		</button>
+	</div>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<div style="margin-top: 15px;">
+	<mat-label><b>Seleccione Cliente:</b></mat-label>
+</div>
+<mat-form-field style="width:100%;">
+	<mat-label>Seleccione...</mat-label>
+  	<mat-select [(ngModel)]="selectedOption">
+	    <mat-option *ngFor="let option of options" [value]="option.id">
+	      {{option.name}}
+	    </mat-option>
+  	</mat-select>
+</mat-form-field>
+<div style="width:100%; text-align: center;">
+	<button mat-raised-button class="login" (click)="doLogin()">Ingresar</button>
+</div>

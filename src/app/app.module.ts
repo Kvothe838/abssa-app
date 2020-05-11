@@ -8,6 +8,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from  '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -18,7 +24,8 @@ import { SolutionsComponent } from './components/solutions/solutions.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { ContactComponent } from './components/contact/contact.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ClientsAccessDialogComponent } from './dialogs/clients-access-dialog/clients-access-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,8 @@ import { ContactComponent } from './components/contact/contact.component';
     SolutionsComponent,
     ServicesComponent,
     ClientsComponent,
-    ContactComponent
+    ContactComponent,
+    ClientsAccessDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,14 @@ import { ContactComponent } from './components/contact/contact.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule, ReactiveFormsModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatSnackBarModule
   ],
   exports: [
   ],

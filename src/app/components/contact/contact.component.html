@@ -1,1 +1,26 @@
-<p>contact works!</p>
+<h2 class="home-text" style="padding-top: 100px;">HAGANOS LLEGAR SU CONSULTA</h2>
+
+<form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()" class="contact-form">
+	<mat-form-field class="width-30">
+		<mat-label class="form-label">Nombre</mat-label>
+		<input matInput [formControl]="nameCtrl">
+	</mat-form-field>
+
+	<mat-form-field class="width-30">
+    	<mat-label class="form-label">Email</mat-label>
+    	<input matInput placeholder="ejemplo@email.com" [formControl]="emailCtrl">
+	</mat-form-field>
+
+	<mat-form-field class="width-30">
+		<mat-label class="form-label">Teléfono de contacto</mat-label>
+		<input type="number" matInput [formControl]="phoneCtrl">
+	</mat-form-field>
+
+	<mat-form-field class="width-100">
+		<mat-label class="form-label">Motivo del Contacto</mat-label>
+		<textarea style="resize:none" matInput [formControl]="commentCtrl"></textarea>
+	</mat-form-field>
+	<div>
+		<button mat-raised-button type="submit" class="send-button" [ngClass]="{'forbidden-send': contactForm.invalid}">Enviar mensaje</button>
+	</div>
+</form>

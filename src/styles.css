@@ -1,4 +1,4 @@
-html, body { height: 100%; }
+html, body { width: 100%; height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .fill-remaining-space {
@@ -9,7 +9,40 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	border-radius: 20px !important;
 }
 
+.login {
+	border-radius: 20px !important;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .logo-abssa {	
 	width: 80px !important;
 	height: 40px !important;
+}
+
+.background-image-abssa {
+	width: 100%;
+	height: 100%;
+	background-image: url('./assets/background.png');
+}
+
+.center-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	transform: scale(0.7);
+}
+
+.home-text{
+	font-family: Helvetica;
+	text-align: center;
+	display:block;
+	color:white;
+	font-size: 24px;
+    margin-bottom: 11px;
+    line-height: 28px;
+    font-weight: 100 !important;
 }
